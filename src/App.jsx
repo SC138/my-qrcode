@@ -9,8 +9,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="card">
-          <h1>Thomas Chevron</h1>
           <img src={TomImage} alt="Thomas Chevron" className="profile-image" />
+          <h1>Thomas Chevron</h1>
+          <p>Développeur Web Junior <br></br>JavaScript - React</p>
           <Links />
         </div>
       </header>

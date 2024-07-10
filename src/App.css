@@ -1,81 +1,144 @@
 /* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f7f7;
+}
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: lightslategray;
-  font-family: 'Montserrat', sans-serif;
-
-
 }
 
 .App-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.App-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../src/assets/img/lac-pavin-2.jpg') no-repeat center center;
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
 }
 
 .card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  padding: 20px;
-  text-align: center;
-  max-width: 400px; 
   width: 100%;
-  min-height: 600px; 
-  font-family: 'Montserrat', sans-serif;
-
+  text-align: center;
 }
 
 .card h1 {
   font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-top: 0;
   margin-bottom: 20px;
+  font-size: 1em;
+  color: #666;
 }
 
 .profile-image {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  width: 100%;
 }
 
 .link {
+  width: 100%;
   margin: 10px 0;
-  display: flex;
-  justify-content: center;
-  width: 350px; 
-  padding: 10px;
-  box-sizing: border-box;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-
 }
 
 a {
-  color: black;
+  display: block;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #32a1dd;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 1.2em;
-  display: block; 
-  width: 100%;
-  text-align: center; 
-  font-family: 'Montserrat', sans-serif;
-  border: solid lightgray 2px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 a:hover {
-  text-decoration: underline;
+  background-color: #17a564;
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+
+  .card h1 {
+    font-size: 1.5em;
+  }
+
+  a {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    height: 100vh;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 0; /* Suppression des bords arrondis pour qu'il prenne tout l'écran */
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  .card h1 {
+    font-size: 1.5em;
+  }
+
+  a {
+    font-size: 0.9em;
+    padding: 10px;
+  }
 }

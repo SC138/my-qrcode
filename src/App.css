@@ -1,11 +1,11 @@
-/* src/App.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
+  background: url('../src/assets/img/lac-bg.jpg') ;
 }
 
 .App {
@@ -60,8 +60,8 @@ body {
 
 .profile-image {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   margin-bottom: 10px;
 }
@@ -94,7 +94,7 @@ a {
 }
 
 a:hover {
-  background-color: #17a564;
+  background-color: rgb(21, 109, 159);
 }
 
 @media (max-width: 600px) {
@@ -124,7 +124,7 @@ a:hover {
     height: 100vh;
     max-width: 100%;
     padding: 10px;
-    border-radius: 0; /* Suppression des bords arrondis pour qu'il prenne tout l'écran */
+    border-radius: 0; 
   }
 
   .profile-image {

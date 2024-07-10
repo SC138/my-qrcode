@@ -54,22 +54,25 @@
   margin: 10px 0;
   display: flex;
   justify-content: center;
-  width: 350px; /* Définir une largeur fixe pour les liens */
+  width: 350px; 
   padding: 10px;
   box-sizing: border-box;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+
 }
 
 a {
   color: black;
   text-decoration: none;
   font-size: 1.2em;
-  display: block; /* Assurer que le lien occupe toute la largeur de .link */
+  display: block; 
   width: 100%;
-  text-align: center; /* Centrer le texte à l'intérieur du lien */
+  text-align: center; 
   font-family: 'Montserrat', sans-serif;
   border: solid lightgray 2px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 
 }
 

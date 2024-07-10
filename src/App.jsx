@@ -1,15 +1,18 @@
+// src/App.jsx
 import React from 'react';
 import Links from './Links';
 import './App.css';
-import Thomasimg from './assets/img/Tom.jpg';
+import TomImage from './assets/img/Tom.jpg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Thomas Chevron</h1>
-        <img src={Thomasimg} alt="Thomas Chevron" className='thomas-img'/>
-        <Links />
+        <div className="card">
+          <h1>Thomas Chevron</h1>
+          <img src={TomImage} alt="Thomas Chevron" className="profile-image" />
+          <Links />
+        </div>
       </header>
     </div>
   );

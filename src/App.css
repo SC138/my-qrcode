@@ -1,47 +1,78 @@
+/* src/App.css */
 .App {
-  text-align: center;
-  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightslategray;
+  font-family: 'Montserrat', sans-serif;
+
+
 }
 
 .App-header {
-  background-color: white;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-h1 {
-  font-size: 2.5em;
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px; 
+  width: 100%;
+  min-height: 600px; 
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.card h1 {
+  font-size: 2em;
   margin-bottom: 20px;
-  color: black;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .links {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .link {
   margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  width: 350px; /* Définir une largeur fixe pour les liens */
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 a {
-  color: #61dafb;
+  color: black;
   text-decoration: none;
   font-size: 1.2em;
+  display: block; /* Assurer que le lien occupe toute la largeur de .link */
+  width: 100%;
+  text-align: center; /* Centrer le texte à l'intérieur du lien */
+  font-family: 'Montserrat', sans-serif;
+  border: solid lightgray 2px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-.qrcode {
-  margin-top: 20px;
-}
-
-.thomas-img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 20px;
 }

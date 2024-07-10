@@ -2,10 +2,11 @@ import React from 'react';
 
 const Links = () => {
   const links = [
-    { name: 'GitHub', url: 'https://github.com/SC138' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/thomas-chevron/' },
+    { name: 'GitHub', url: 'https://github.com/SC138' },
     { name: 'Email', url: 'mailto:chevron.thomas33@gmail.com' },
     { name: 'Téléphone', url: 'tel:+33698422922' },
+    { name: 'Mon CV', url: '/documents/cv.pdf' },
   ];
 
   return (

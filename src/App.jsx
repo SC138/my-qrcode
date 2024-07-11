@@ -33,6 +33,9 @@ function App() {
             Développeur Web Junior <br></br>JavaScript - React
           </p>
           <Links />
+          <div className="footer">
+            <p>Created by Thomas Chevron</p>
+          </div>
         </div>
       </header>
     </div>

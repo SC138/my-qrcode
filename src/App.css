@@ -84,8 +84,8 @@ a {
   padding: 15px;
   text-align: center;
   color: #ffffff;
-  background-color: #32a1dd;
-  border: none;
+  /* background-color: rgba(218, 242, 254, 0.8); */
+  border: solid white 3px;
   border-radius: 25px;
   font-size: 1em;
   font-weight: bold;
@@ -95,7 +95,7 @@ a {
 }
 
 a:hover {
-  background-color: rgb(21, 109, 159);
+  background-color: rgba(21, 108, 159, 0.781);
 }
 
 @media (max-width: 600px) {

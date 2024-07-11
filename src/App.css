@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background: url('../src/assets/img/lac-bg.jpg') ;
+  background: url('../src/assets/img/bg-body.jpg') no-repeat center center fixed;
   overflow: hidden;
 }
 
@@ -26,6 +26,19 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+}
+
+.share-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  color: white;
+
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+
 }
 
 .App-header::before {

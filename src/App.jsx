@@ -1,21 +1,23 @@
-// src/App.jsx
 import React from "react";
 import Links from "./Links";
 import "./App.css";
 import TomImage from "./assets/img/Tom.jpg";
 
 function App() {
+  // Fonction pour gérer le partage
   const handleShare = () => {
     if (navigator.share) {
+      // Vérifie sir l'API web share est supportée
       navigator
         .share({
           title: "Partager",
           text: "Partager",
-          url: window.location.href,
+          url: window.location.href, // URL à partager, dans ce cas : l'url de la page actuelle
         })
-        .then(() => console.log("Partagé avec succés"))
-        .catch((error) => console.log("Echec de partage", error));
+        .then(() => console.log("Partagé avec succés")) // Message de succès
+        .catch((error) => console.log("Echec de partage", error)); // Message d'erreur
     } else {
+      // Si l'API Web Share n'est pas supportée
       alert("API Web Share non prise en charge dans votre navigateur.");
     }
   };

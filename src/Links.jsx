@@ -37,7 +37,7 @@ const Links = () => {
     { name: "GitHub", url: "https://github.com/SC138" },
     { name: "Mon CV", url: "/documents/cv.pdf" },
     { name: "Email", url: "mailto:chevron.thomas33@gmail.com" },
-    { name: "Téléphone", url: "tel:+33698422922" },
+    { name: "Téléphone", url: "tel:0698422922" },
   ];
 
   // État pour gérer l'affichage du numéro de téléphone
@@ -62,7 +62,7 @@ const Links = () => {
         <div className="link" key={index}>
           {/* Lien cliquable avec son URL et son nom */}
           {link.name === "Téléphone" && showPhoneNumber ? (
-            <span>{link.url.replace("tel:", "")}</span>
+            <span className="phone-number">{link.url.replace("tel:", "")}</span>
           ) : (
             <a
               href={link.url}

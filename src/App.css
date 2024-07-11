@@ -100,6 +100,26 @@ a:hover {
   background-color: rgba(21, 108, 159, 0.781);
 }
 
+.phone-number{
+  display: block;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(173, 177, 179, 0.525);
+  border: solid white 3px;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.phone-number:hover {
+  background-color: rgba(21, 108, 159, 0.781);
+}
+
 .share-button {
   display: none; 
 }

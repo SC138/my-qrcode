@@ -28,7 +28,7 @@
 
 // export default Links;
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const Links = () => {
   // Déclaration d'un tableau de liens avec leurs noms et URL correspondantes

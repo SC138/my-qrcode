@@ -29,6 +29,6 @@ Vous pouvez accéder à la version desktop de l'application en suivant ce lien :
 
 - **Thomas Chevron** - [LinkedIn](https://www.linkedin.com/in/thomas-chevron/)
 
-## Licence
+## Licence   
 
 Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.

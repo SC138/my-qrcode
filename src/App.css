@@ -28,18 +28,7 @@ body {
   border-radius: 10px;
 }
 
-.share-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 1.5em;
-  color: white;
 
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-
-}
 
 .App-header::before {
   content: '';
@@ -111,10 +100,24 @@ a:hover {
   background-color: rgba(21, 108, 159, 0.781);
 }
 
+.share-button {
+  display: none; 
+}
+
 @media (max-width: 600px) {
   .App-header {
     max-width: 90%;
     padding: 10px;
+  }
+
+  .share-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
   }
 
   .profile-image {

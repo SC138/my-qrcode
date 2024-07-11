@@ -1,33 +1,3 @@
-// import React from "react";
-
-// const Links = () => {
-// // Déclaration d'un tableau de liens avec leurs noms et URL correspondantes
-//   const links = [
-//     { name: "LinkedIn", url: "https://www.linkedin.com/in/thomas-chevron/" },
-//     { name: "GitHub", url: "https://github.com/SC138" },
-//     { name: "Mon CV", url: "/documents/cv.pdf" },
-//     { name: "Email", url: "mailto:chevron.thomas33@gmail.com" },
-//     { name: "Téléphone", url: "tel:+33698422922" },
-//   ];
-
-//   // Retourne le JSX pour afficher les liens
-//   return (
-//     <div className="links">
-//       {links.map((link, index) => (
-//         // Crée un div pour chaque lien, en utilisant l'index comme clé unique
-//         <div className="link" key={index}>
-//         {/* Lien cliquable avec son URL et son nom */}
-//           <a href={link.url} target="_blank" rel="noopener noreferrer">
-//             {link.name}
-//           </a>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default Links;
-
 import React, { useState } from "react";
 
 const Links = () => {

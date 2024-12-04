@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Links = () => {
   // Déclaration d'un tableau de liens avec leurs noms et URL correspondantes
   const links = [
+    { name: "Portfolio", url: "https://thomaschevron.netlify.app/" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/thomas-chevron/" },
     { name: "GitHub", url: "https://github.com/SC138" },
     { name: "Mon CV", url: "/documents/cv.pdf" },

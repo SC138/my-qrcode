@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+html,
+body {
+  height: 100%; /* Permet de s'assurer que la hauteur est définie correctement */
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: url('../src/assets/img/bg-body.jpg') no-repeat center center fixed;
+  font-family: "Montserrat", sans-serif;
+  background: url("../src/assets/img/bg-body.jpg") no-repeat center center fixed;
   overflow: hidden;
 }
 
@@ -12,7 +17,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100%;
+  height: 100dvh;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .App-header {
@@ -21,23 +28,23 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   padding: 20px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 
-
-
 .App-header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../src/assets/img/lac-pavin-2.jpg') no-repeat center center;
+  background: url("../src/assets/img/lac-pavin-2.jpg") no-repeat center center;
   background-size: cover;
   filter: blur(4px);
   z-index: -1;
@@ -100,7 +107,7 @@ a:hover {
   background-color: rgba(21, 108, 159, 0.781);
 }
 
-.phone-number{
+.phone-number {
   display: block;
   padding: 15px;
   text-align: center;
@@ -121,7 +128,7 @@ a:hover {
 }
 
 .share-button {
-  display: none; 
+  display: none;
 }
 
 .footer {
@@ -131,19 +138,19 @@ a:hover {
   text-align: center;
 }
 
-.footer > p{
+.footer > p {
   color: white;
 }
-
 
 @media (max-width: 600px) {
   .App-header {
     max-width: 90%;
     padding: 10px;
+    padding-bottom: 30px;
   }
 
   .share-button {
-    display: block; 
+    display: block;
     position: absolute;
     top: 30px;
     right: 10px;
@@ -174,21 +181,21 @@ a:hover {
     height: 100vh;
     max-width: 100%;
     padding: 10px;
-    border-radius: 0; 
+    border-radius: 0;
   }
 
   .profile-image {
-    width: 100px; 
+    width: 100px;
     height: 100px;
     margin-bottom: 10px;
   }
 
   .card h1 {
-    font-size: 1.5em; 
+    font-size: 1.5em;
   }
 
   a {
-    font-size: 1em; 
-    padding: 10px; 
+    font-size: 1em;
+    padding: 10px;
   }
 }
